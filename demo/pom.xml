@@ -19,6 +19,8 @@
     <modules>
         <module>spring-boot-swagger2</module>
         <module>spring-boot-log4j</module>
+        <module>spring-boot-dubbo-provider</module>
+        <module>spring-boot-dubbo-consumer</module>
     </modules>
 
     <properties>
