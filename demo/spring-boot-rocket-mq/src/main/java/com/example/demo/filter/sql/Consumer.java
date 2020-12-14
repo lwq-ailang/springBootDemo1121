@@ -18,10 +18,8 @@ public class Consumer {
         //3.订阅主题Topic
         //TODO:MessageSelector.bySql(sql)，SQL=设置用户的属性的值的条件
         consumer.subscribe("FilterSQLTopic", MessageSelector.bySql("i>5"));
-
         //4.设置回调函数，处理消息
         consumer.registerMessageListener(new MessageListenerConcurrently() {
-
             //接受消息内容
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
