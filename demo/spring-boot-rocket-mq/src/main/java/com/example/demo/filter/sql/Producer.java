@@ -24,8 +24,8 @@ public class Producer {
              * 参数二：消息Tag
              * 参数三：消息内容
              */
-            Message msg = new Message("FilterSQLTopic", "Tag1", ("Hello World" + i).getBytes());
-
+            Message msg = new Message("FilterSQLTopic", "Tag1", ("sql过滤" + i).getBytes());
+            //设置用户的属性
             msg.putUserProperty("i", String.valueOf(i));
 
             //5.发送消息

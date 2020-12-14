@@ -15,7 +15,8 @@ public class Consumer {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("group1");
         //2.指定Nameserver地址
         consumer.setNamesrvAddr("172.26.239.135:9876;172.26.239.136:9876");
-        //3.订阅主题Topic和Tag
+        //3.订阅主题Topic
+        //TODO:MessageSelector.bySql(sql)，SQL=设置用户的属性的值的条件
         consumer.subscribe("FilterSQLTopic", MessageSelector.bySql("i>5"));
 
         //4.设置回调函数，处理消息
