@@ -1,4 +1,4 @@
-package com.example.demo.producer;
+package com.example.demo.base.producer;
 
 import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
