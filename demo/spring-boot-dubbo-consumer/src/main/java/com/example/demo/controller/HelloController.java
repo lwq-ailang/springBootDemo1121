@@ -16,7 +16,7 @@ public class HelloController {
 
     @RequestMapping()
     @ResponseBody
-    public String hello(){
+    public String hello() {
         String dalao = testService.hello("dalao");
         System.out.println(dalao);
         return dalao;

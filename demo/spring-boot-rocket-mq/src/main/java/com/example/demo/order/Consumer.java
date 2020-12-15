@@ -23,7 +23,7 @@ public class Consumer {
             @Override
             public ConsumeOrderlyStatus consumeMessage(List<MessageExt> msgs, ConsumeOrderlyContext context) {
                 for (MessageExt msg : msgs) {
-                    System.out.println("消息："+msg);
+                    System.out.println("消息：" + msg);
                     System.out.println("线程名称：【" + Thread.currentThread().getName() + "】:" + new String(msg.getBody()));
                 }
                 return ConsumeOrderlyStatus.SUCCESS;

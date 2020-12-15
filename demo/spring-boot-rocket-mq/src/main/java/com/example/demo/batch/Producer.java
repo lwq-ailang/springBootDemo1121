@@ -40,15 +40,15 @@ public class Producer {
         result = producer.send(msgs);
 
         //TODO：2.把大的消息分裂成若干个小的消息
-            //ListSplitter splitter = new ListSplitter(msgs);
-            //while (splitter.hasNext()) {
-            //    try {
-            //        List<Message> listItem = splitter.next();
-            //        result = producer.send(listItem);
-            //    } catch (Exception e) {
-            //        e.printStackTrace();
-            //    }
-            //}
+        //ListSplitter splitter = new ListSplitter(msgs);
+        //while (splitter.hasNext()) {
+        //    try {
+        //        List<Message> listItem = splitter.next();
+        //        result = producer.send(listItem);
+        //    } catch (Exception e) {
+        //        e.printStackTrace();
+        //    }
+        //}
 
         System.out.println("发送结果:" + result);
 

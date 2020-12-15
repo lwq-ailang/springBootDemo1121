@@ -36,6 +36,7 @@ public class Producer {
                 //TODO:
                 return LocalTransactionState.UNKNOW;
             }
+
             //TODO:该方法时MQ进行消息事务状态回查 -- 6.check the state of local transaction
             @Override
             public LocalTransactionState checkLocalTransaction(MessageExt msg) {
