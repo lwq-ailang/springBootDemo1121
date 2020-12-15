@@ -24,6 +24,7 @@
         <module>spring-boot-rocket-mq</module>
         <module>spring-boot-dubbo-provider</module>
         <module>springboot-rocketmq-consumer</module>
+        <module>spring-boot-dubbo-interface</module>
     </modules>
 
     <properties>
